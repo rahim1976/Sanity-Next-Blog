@@ -1,3 +1,5 @@
+import { TypedObject } from "@portabletext/types";
+
 export interface simpleBlogCard {
     title:string;
     smallDescription: string;
@@ -8,7 +10,7 @@ export interface simpleBlogCard {
 export interface fullBlog {
     currentSlug: string; 
     title : string;
-    content: string;
+    content: TypedObject[];
     titleImage: string;
 }
 
